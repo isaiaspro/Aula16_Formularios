@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    height: 100%;
+    background-color: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+main {
+    min-width: 320px;
+    max-width: 1024px;
+    display: flex;
+    flex: auto;
+    justify-content: center;
+    flex-direction: column;
+    padding: 35vh;
+    align-self: center;
+    gap: 40px;
+}
+
+.formulario {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 420px;
+    height: 250px;
+    gap: 20px;
+}
+
+.formulario>p {
+    display: block;
+    font-size: 2em;
+    padding-right: 70%;
+}
+
+.input {
+    border: solid black 2px;
+    width: 100%;
+    height: 40px;
+}
+
+.entrar {
+    background-color: #1CD1B0;
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 23px;
+}
+
+
+
+.top {
+    display: flex;
+    align-items: center;
+    background-color: #1CD1B0;
+    width: 100%;
+    height: 20px;
+    font-size: 15px;
+    padding-left: 30px;
+    color: #333333;
+}
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: #00669F;
+    width: 100%;
+    height: 60px;
+    font-style: normal;
+    color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: fixed;
+}
+
+h1 {
+    padding-left: 30px;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: #00669F;
+    color: #FFF9F9;
+    width: 100%;
+    min-height: 40px;
+}
+
+.direitos {
+    font-size: 15px;
+    width: 100%;
+    /* line-height: 20px; */
+}
+
+#github {
+    width: 100px;
+    padding-right: 30px;
+}
+
+
+/* Viewport Tablet */
+@media (min-width: 1024px) {
+    main {
+        gap: 80px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+
+/* Viewport Laptop */
+@media (min-width: 1025px) {
+    main {
+        gap: 80px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* Viewport Desktop */
+@media (min-width: 1436px) {
+    main {
+        max-width: 1920px;
+        gap: 40px;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+}
+
+
+.card {
+    width: 320px;
+    height: 620px;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px 16px 0px 0px;
+    background-color: #F3F3F3;
+    color: #333333;
+    justify-content: first baseline;
+}
+
+.card p {
+    margin: 30px 0;
+    padding: 0 36px;
+    line-height: 19px;
+    text-align: justify;
+    color: #333333;
+    font-size: 12px;
+}
+
+.like {
+    padding-top: 3%;
+    padding-right: 80%;
+
+}
+
+#heart {
+    width: 30px;
+}
+
+
+
+#perfil {
+    border-radius: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 130px;
+    margin-top: 65%;
+}
+
+
+/* Backgrounds dos Cards */
+#batman {
+    background-image: url(../img/batman_capa.png);
+}
+
+#Wonder-Woman {
+    background-image: url(../img/wonder_woman_capa.png);
+}
+
+#Superman {
+    background-image: url(../img/capa_superman.png);
+}
+
+#Arlequina {
+    background-image: url(../img/capa_arlequina.png);
+}
+
+.card a {
+    text-decoration: none;
+    color: #F3F3F3;
+    font-size: 16px;
+    display: block;
+    padding: 15px 10px;
+}
+
+.btn {
+    width: 145.34px;
+    height: 54.76px;
+    background-color: #00669F;
+    border: none;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: auto;
+    margin-bottom: 15px;
+}
