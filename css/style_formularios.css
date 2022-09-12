@@ -9,7 +9,7 @@
 
 html,
 body {
-    height: 100%;
+    height: 100vh;
 }
 
 body {
@@ -17,7 +17,7 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    height: 100%;
+    height: 100vh;
     background-color: #E5E5E5;
     display: flex;
     flex-direction: column;
@@ -30,12 +30,26 @@ main {
     min-width: 320px;
     max-width: 1024px;
     display: flex;
+    height: 50vh;
     flex: auto;
     justify-content: center;
     flex-direction: column;
-    padding: 35vh;
+    /* padding: 35vh; */
     align-self: center;
     gap: 40px;
+}
+
+.titulo{
+    width: 350px;
+    height: 50px;
+    display: flex;
+    border: none;
+}
+
+.titulo>p {
+    display: block;
+    font-size: 2em;
+    text-align: right;
 }
 
 .formulario {
@@ -44,17 +58,22 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    align-content: center;
-    width: 420px;
-    height: 250px;
+    /* align-content: center; */
+    width: 350px;
+    min-width: 350px;
+    height: 100vh;
     gap: 20px;
 }
 
-.formulario>p {
-    display: block;
-    font-size: 2em;
-    padding-right: 70%;
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    height: 30px;
+    border: none;
 }
+
+
 
 .input {
     border: solid black 2px;
@@ -62,9 +81,37 @@ main {
     height: 40px;
 }
 
+.select {
+    border: solid black 2px;
+    width: 100%;
+    height: 40px;
+}
+
+.textarea {
+    border: solid black 2px;
+    width: 100%;
+    height: 150px;
+}
+
 .entrar {
     background-color: #1CD1B0;
     width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 23px;
+}
+
+.registrar{
+    background-color: #1CD1B0;
+    width: 47%;
+    height: 30px;
+    border: none;
+    border-radius: 23px;
+
+}
+.limpar{
+    background-color: #888888;
+    width: 47%;
     height: 30px;
     border: none;
     border-radius: 23px;
@@ -112,6 +159,8 @@ footer {
     color: #FFF9F9;
     width: 100%;
     min-height: 40px;
+    position: fixed;
+    bottom: 0vh;
 }
 
 .direitos {
@@ -154,87 +203,4 @@ footer {
         flex-wrap: nowrap;
         justify-content: center;
     }
-}
-
-
-.card {
-    width: 320px;
-    height: 620px;
-    background-repeat: no-repeat;
-    background-position: top left;
-    background-size: contain;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 16px 16px 0px 0px;
-    background-color: #F3F3F3;
-    color: #333333;
-    justify-content: first baseline;
-}
-
-.card p {
-    margin: 30px 0;
-    padding: 0 36px;
-    line-height: 19px;
-    text-align: justify;
-    color: #333333;
-    font-size: 12px;
-}
-
-.like {
-    padding-top: 3%;
-    padding-right: 80%;
-
-}
-
-#heart {
-    width: 30px;
-}
-
-
-
-#perfil {
-    border-radius: 100%;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 130px;
-    margin-top: 65%;
-}
-
-
-/* Backgrounds dos Cards */
-#batman {
-    background-image: url(../img/batman_capa.png);
-}
-
-#Wonder-Woman {
-    background-image: url(../img/wonder_woman_capa.png);
-}
-
-#Superman {
-    background-image: url(../img/capa_superman.png);
-}
-
-#Arlequina {
-    background-image: url(../img/capa_arlequina.png);
-}
-
-.card a {
-    text-decoration: none;
-    color: #F3F3F3;
-    font-size: 16px;
-    display: block;
-    padding: 15px 10px;
-}
-
-.btn {
-    width: 145.34px;
-    height: 54.76px;
-    background-color: #00669F;
-    border: none;
-    text-align: center;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-top: auto;
-    margin-bottom: 15px;
 }

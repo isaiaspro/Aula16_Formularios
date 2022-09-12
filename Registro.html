@@ -21,13 +21,31 @@
 
     <main class="container">
 
+<form action="">
         <fieldset class="formulario">
-            <p>Login</p>
-            <input class="input" type="email" placeholder="   Usuário">
-            <input class="input" type="password" placeholder="   Senha">
-            <button class="entrar">Entrar</button>
 
+            <fieldset class="titulo">
+                <p>Registro</p>
+            </fieldset>
+            
+            <input class="input" type="text" placeholder="   Nome e Sobrenome">
+            <input class="input" type="email" placeholder="   E-mail">
+            <input class="input" type="password" placeholder="   Senha">
+            <select class="select" name="pais">
+                <option value="1">Brasil</option>
+                <option value="2">Argentina</option>
+                <option value="3">Paraguai</option>
+                <option value="4">Uruguai</option>
+            </select>
+
+            <fieldset class="buttons">
+                <button class="limpar">Limpar</button>
+                <button class="registrar">Registrar</button>
+            </fieldset>
         </fieldset>
+
+    </form>
+
 
     </main>
 
